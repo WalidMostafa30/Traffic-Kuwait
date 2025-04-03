@@ -1,0 +1,32 @@
+@import "tailwind.css";
+
+:root {
+  --color-stoneClr: #eceae4;
+  --color-blueClr: #000576;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  background-color: #eceae4;
+  background-image: url(https://www.moi.gov.kw/main/images/assets/common/bg-pattern.png);
+  background-size: 77px 200px;
+}
+
+.sectionCard {
+  &:hover {
+    background-color: var(--color-stoneClr);
+  }
+  &.active {
+    background-color: var(--color-stoneClr);
+
+    form {
+      display: block;
+    }
+  }
+}
